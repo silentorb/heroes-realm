@@ -1,0 +1,9 @@
+GameInfo
+{
+	PlayerClasses = "FighterTempered", "ClericTempered", "MageTempered"
+}
+
+DoomEdNums
+{
+	22001 = Piggy
+}

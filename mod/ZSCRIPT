@@ -1,0 +1,47 @@
+class FighterTempered : FighterPlayer
+{
+	Default
+	{
+		Player.StartItem "CustomFighterFists";
+		Player.WeaponSlot 1, "CustomFighterFists";
+
+	}
+}
+
+class ClericTempered : ClericPlayer
+{
+	Default
+	{
+		Player.StartItem "CustomFighterFists";
+		Player.WeaponSlot 1, "CustomFighterFists";
+
+	}
+}
+
+class MageTempered : MagePlayer
+{
+	Default
+	{
+		Player.StartItem "CustomFighterFists";
+		Player.WeaponSlot 1, "CustomFighterFists";
+	}
+}
+
+class CustomFighterFists : FighterWeapon replaces FWeapFist
+{
+	Default
+	{
+
+	}
+	
+}
+
+class Piggy : Actor
+{
+	States
+	{
+	Spawn:
+		WCSS A -1;
+		Stop;
+	}
+}
