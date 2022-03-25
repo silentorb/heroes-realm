@@ -1,5 +1,6 @@
 # Heroes Realm
 
 * A custom Hexen map
-* By Christopher W. Johnson 
+* Created by Christopher W. Johnson
+* Focuses on dodging and puzzles instead of killing
 * Requires GZDoom
