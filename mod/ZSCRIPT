@@ -45,3 +45,12 @@ class Piggy : Actor
 		Stop;
 	}
 }
+
+class FriendlyCleric : ClericBoss replaces ClericBoss
+{
+	Default
+	{
+    +FRIENDLY
+	}
+
+}
