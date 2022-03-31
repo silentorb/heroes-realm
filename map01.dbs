@@ -14,7 +14,7 @@ maps
 			resource0
 			{
 				type = 0;
-				location = "E:\\games\\gzdoom\\HEXEN-without-music.WAD";
+				location = "E:\\games\\gzdoom\\HEXEN.WAD";
 				option1 = 0;
 				option2 = 0;
 				notfortesting = 0;
