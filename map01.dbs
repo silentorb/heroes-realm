@@ -1,5 +1,5 @@
 type = "Doom Builder Map Settings Configuration";
-gameconfig = "Hexen_HexenHexen.cfg";
+gameconfig = "GZDoom_HexenUDMF.cfg";
 strictpatches = 0;
 
 maps
@@ -10,40 +10,6 @@ maps
 		
 		resources
 		{
-			
-			resource0
-			{
-				type = 0;
-				location = "E:\\games\\gzdoom\\HEXEN.WAD";
-				option1 = 0;
-				option2 = 0;
-				notfortesting = 0;
-				requiredarchives = "";
-			}
-			
-			resource1
-			{
-				type = 1;
-				location = "E:\\dev\\games\\heroes-realm\\mod";
-				option1 = 0;
-				option2 = 0;
-				notfortesting = 0;
-				requiredarchives = "";
-			}
-		}
-		
-		grid
-		{
-			background = "";
-			backsource = 0;
-			backoffsetx = 0;
-			backoffsety = 0;
-			backscalex = 100;
-			backscaley = 100;
-			gridsize = 8;
-			gridrotate = 0;
-			gridoriginx = 0;
-			gridoriginy = 0;
 		}
 		defaultfloortexture = "F_054";
 		defaultceiltexture = "F_011";
@@ -62,9 +28,24 @@ maps
 		overrideceilheight = false;
 		overridebrightness = false;
 		uselongtexturenames = false;
-		viewpositionx = 817.4276f;
-		viewpositiony = -289.861f;
-		viewscale = 3.547443f;
+		viewpositionx = 165.1141f;
+		viewpositiony = -1120.794f;
+		viewscale = 5.302246f;
+		scriptcompiler = "zdoom_acs.cfg";
+		
+		grid
+		{
+			background = "";
+			backsource = 0;
+			backoffsetx = 0;
+			backoffsety = 0;
+			backscalex = 100;
+			backscaley = 100;
+			gridsize = 32;
+			gridrotate = 0;
+			gridoriginx = 0;
+			gridoriginy = 0;
+		}
 		
 		reloadresourceprecommand
 		{
@@ -92,6 +73,30 @@ maps
 			autocloseonsuccess = true;
 			exitcodeiserror = true;
 			stderriserror = true;
+		}
+		
+		scriptdocuments
+		{
+			
+			document0
+			{
+				filename = "DIALOGUE";
+				hash = 3588187714;
+				resource;
+				tabtype = 0;
+				scripttype = 18;
+			}
+			
+			document1
+			{
+				filename = "SCRIPTS";
+				hash = 3469170009;
+				resource;
+				tabtype = 0;
+				scripttype = 1;
+				caretposition = 183;
+				activetab = true;
+			}
 		}
 	}
 }
