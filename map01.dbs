@@ -1,5 +1,5 @@
 type = "Doom Builder Map Settings Configuration";
-gameconfig = "Hexen.cfg";
+gameconfig = "Hexen_HexenHexen.cfg";
 strictpatches = 0;
 
 maps
@@ -18,8 +18,8 @@ maps
 				option1 = 0;
 				option2 = 0;
 				notfortesting = 0;
+				requiredarchives = "";
 			}
-			
 			
 			resource1
 			{
@@ -28,10 +28,9 @@ maps
 				option1 = 0;
 				option2 = 0;
 				notfortesting = 0;
+				requiredarchives = "";
 			}
-			
 		}
-		
 		
 		grid
 		{
@@ -42,9 +41,57 @@ maps
 			backscalex = 100;
 			backscaley = 100;
 			gridsize = 8;
+			gridrotate = 0;
+			gridoriginx = 0;
+			gridoriginy = 0;
+		}
+		defaultfloortexture = "F_054";
+		defaultceiltexture = "F_011";
+		defaulttoptexture = "CASTLE01";
+		defaultwalltexture = "CASTLE01";
+		defaultbottomtexture = "CASTLE01";
+		custombrightness = 196;
+		customfloorheight = 0;
+		customceilheight = 128;
+		overridefloortexture = false;
+		overrideceiltexture = false;
+		overridetoptexture = false;
+		overridemiddletexture = false;
+		overridebottomtexture = false;
+		overridefloorheight = false;
+		overrideceilheight = false;
+		overridebrightness = false;
+		uselongtexturenames = false;
+		viewpositionx = 817.4276f;
+		viewpositiony = -289.861f;
+		viewscale = 3.547443f;
+		
+		reloadresourceprecommand
+		{
+			autocloseonsuccess = true;
+			exitcodeiserror = true;
+			stderriserror = true;
 		}
 		
+		reloadresourcepostcommand
+		{
+			autocloseonsuccess = true;
+			exitcodeiserror = true;
+			stderriserror = true;
+		}
+		
+		testprecommand
+		{
+			autocloseonsuccess = true;
+			exitcodeiserror = true;
+			stderriserror = true;
+		}
+		
+		testpostcommand
+		{
+			autocloseonsuccess = true;
+			exitcodeiserror = true;
+			stderriserror = true;
+		}
 	}
-	
 }
-
