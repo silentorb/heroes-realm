@@ -58,3 +58,27 @@ class FriendlyCleric : ClericBoss replaces ClericBoss
 	}
 
 }
+
+class SwitchableChandelier : SwitchableDecoration
+{
+	Default
+	{
+		Radius 20;
+		Height 60;
+		+SPAWNCEILING
+		+NOGRAVITY
+	}
+	States
+	{
+	Active:
+		CDLR ABC 4;
+		Loop;
+	Spawn:
+		CDLR ABC 4;
+		Loop;
+	Inactive:
+		CDLR D -1;
+		Stop;
+		Stop;
+	}
+}

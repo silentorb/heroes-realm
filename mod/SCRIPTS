@@ -9,14 +9,29 @@ int elevatorMode = 2; // 0: Moving, 1: Bottom, 2: Top
 
 // Move elevator from switch inside elevator
 script 1 (void) {
-	if (elevatorMode == 2)	{
+print(:s"Hello");
+	if (elevatorMode == 2) {
 		elevatorMode = 0;
 		FloorAndCeiling_LowerByValue(elevatorSector, elevatorSpeed, elevatorDistance);
 		TagWait(elevatorSector);
 		elevatorMode = 1;
-	} else if (elevatorMode == 1){
+	} else if (elevatorMode == 1) {
 		FloorAndCeiling_RaiseByValue(elevatorSector, elevatorSpeed, elevatorDistance);
 		TagWait(elevatorSector);
 		elevatorMode = 2;
+	}
+}
+
+int bedroomLightMode = 1; // 0: Off, 1: On
+
+// Toggle light switch in bedroom
+script 4 (int sector, int amount) {
+print(:s"Hello");
+	if (bedroomLightMode == 1) {
+		Light_LowerByValue(sector, amount);
+		bedroomLightMode = 0;
+	} else {
+		Light_RaiseByValue(sector, amount);
+		bedroomLightMode = 1;
 	}
 }
