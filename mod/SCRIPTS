@@ -1,0 +1,22 @@
+#include "zcommon.acs"
+
+// Flag to keep track of what floor elevator is on.
+int elevatorMode = 2; // 0: Moving, 1: Bottom, 2: Top
+
+#define elevatorSector 1001
+#define elevatorSpeed 16
+#define elevatorDistance 360
+
+// Move elevator from switch inside elevator
+script 1 (void) {
+	if (elevatorMode == 2)	{
+		elevatorMode = 0;
+		FloorAndCeiling_LowerByValue(elevatorSector, elevatorSpeed, elevatorDistance);
+		TagWait(elevatorSector);
+		elevatorMode = 1;
+	} else if (elevatorMode == 1){
+		FloorAndCeiling_RaiseByValue(elevatorSector, elevatorSpeed, elevatorDistance);
+		TagWait(elevatorSector);
+		elevatorMode = 2;
+	}
+}
